@@ -1,0 +1,85 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "curly": [
+            "error",
+            "all"
+        ],
+        "sort-imports": [
+            "error",
+            {
+                "ignoreCase": true,
+                "ignoreDeclarationSort": true,
+                "ignoreMemberSort": false,
+                "memberSyntaxSortOrder": [
+                    "none",
+                    "all",
+                    "multiple",
+                    "single"
+                ]
+            }
+        ],
+        "import/no-duplicates": "error",
+        "space-before-blocks": [
+            "error",
+            "always"
+        ],
+        "import/order": [
+            "error",
+            {
+                "groups": [
+                    [
+                        "builtin",
+                        "external"
+                    ],
+                    "internal",
+                    [
+                        "parent",
+                        "sibling",
+                        "index"
+                    ]
+                ],
+                "pathGroups": [
+                    {
+                        "pattern": "@interfaces/**",
+                        "group": "internal",
+                        "position": "before"
+                    },
+                    {
+                        "pattern": "@utils/**",
+                        "group": "internal",
+                        "position": "before"
+                    },
+                    {
+                        "pattern": "@src/**",
+                        "group": "internal",
+                        "position": "after"
+                    }
+                ],
+                "pathGroupsExcludedImportTypes": [],
+                "newlines-between": "always",
+                "alphabetize": {
+                    "order": "asc",
+                    "caseInsensitive": true
+                }
+            }
+        ]
+    }
+}

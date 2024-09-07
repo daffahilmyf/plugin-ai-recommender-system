@@ -1,0 +1,33 @@
+{
+  "name": "ai-recommender-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "20"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "Daffa Hilmy Fadhlurrohman",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "openai": "^4.58.1"
+  },
+  "devDependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
+    "@eslint/js": "^9.10.0",
+    "@types/node": "^22.5.4",
+    "@typescript-eslint/eslint-plugin": "^8.4.0",
+    "@typescript-eslint/parser": "^8.4.0",
+    "eslint": "^9.10.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.30.0",
+    "globals": "^15.9.0",
+    "typescript-eslint": "^8.4.0"
+  }
+}
